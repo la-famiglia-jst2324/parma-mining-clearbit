@@ -1,4 +1,4 @@
-"""clearbit data sourcing package."""
+"""Clearbit data sourcing package."""
 
 import importlib.metadata
 
