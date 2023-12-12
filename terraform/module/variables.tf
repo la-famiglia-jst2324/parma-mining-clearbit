@@ -18,3 +18,8 @@ variable "FIREBASE_ADMINSDK_CERTIFICATE" {
   type        = string
   sensitive   = true
 }
+
+variable "ANALYTICS_BASE_URL" {
+  description = "value"
+  type        = string
+}

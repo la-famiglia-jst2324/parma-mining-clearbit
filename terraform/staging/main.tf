@@ -29,9 +29,10 @@ provider "google" {
 }
 
 module "main" {
-  source           = "../module"
-  env              = "staging"
-  project          = local.project
-  region           = local.region
+  source                        = "../module"
+  env                           = "staging"
+  project                       = local.project
+  region                        = local.region
   FIREBASE_ADMINSDK_CERTIFICATE = var.FIREBASE_ADMINSDK_CERTIFICATE
+  ANALYTICS_BASE_URL            = var.ANALYTICS_BASE_URL
 }
