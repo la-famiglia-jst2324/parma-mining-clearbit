@@ -29,9 +29,11 @@ provider "google" {
 }
 
 module "main" {
-  source                        = "../module"
-  env                           = "staging"
-  project                       = local.project
-  region                        = local.region
-  ANALYTICS_BASE_URL            = var.ANALYTICS_BASE_URL
+  source           = "../module"
+  env              = "staging"
+  project          = local.project
+  region           = local.region
+  ANALYTICS_BASE_URL = var.ANALYTICS_BASE_URL
+
+  PARMA_SHARED_SECRET_KEY = var.PARMA_SHARED_SECRET_KEY
 }
